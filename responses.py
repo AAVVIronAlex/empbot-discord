@@ -20,3 +20,6 @@ def handle_response(message) -> str:
     
     if p_message == "about":
         return "Copyright EarthMapsPictures Inc. 2015-2023 \nDeveloped by @aavvironalex and EarthMapsPictures Inc."
+    
+    if p_message == "greet":
+        return "Hello I am EarthMapsPictures Bot. The Official EarthMapsPictures Website: https://earthmapspictures.weebly.com/"
