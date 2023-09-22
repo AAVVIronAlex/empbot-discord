@@ -9,5 +9,8 @@ def handle_response(message) -> str:
     if p_message == "roll":
         return str(random.randint(1, 6))
     
+    if p_message == "waka":
+        return "Waka Woka Wiki Weke Woko Weki Wake ..."
+    
     if p_message == "!help":
         return "`This is a help message that you can modify.`"
