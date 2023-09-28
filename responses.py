@@ -1,4 +1,5 @@
 import random
+import string
 
 JOKES = [
     "I was her semicolon but...    One day She decided to switch to Python.",
@@ -7,6 +8,83 @@ JOKES = [
     " no winning with these syntax errors dad!",
     "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
     "What is an astronaut’s favorite part on a computer? The space bar.", "Why are iPhone chargers not called Apple Juice?!"
+]
+
+ADJECTIVES = [
+    "sleepy",
+    "happy",
+    "gross",
+    "faster",
+    "dusty",
+    "cool",
+    "messy",
+    "mischievous",
+    "garrulous",
+    "long",
+    "cold",
+    "hot",
+    "warm",
+    "slow",
+    "smelly",
+    "wet",
+    "fat",
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "purple",
+    "fluffy",
+    "white",
+    "proud",
+    "brave",
+    "proud",
+    "beutiful",
+    "extreme",
+]
+
+NOUNS = [
+    "apples",
+    "dog",
+    "cat",
+    "skyscraper",
+    "house",
+    "garden",
+    "pen",
+    "pencil",
+    "car",
+    "music",
+    "computer",
+    "mouse"
+    "dinosaur",
+    "ball",
+    "toaster",
+    "goat",
+    "dragon",
+    "hammer",
+    "duck",
+    "panda",
+    "telephone",
+    "banana",
+    "teacher",
+]
+
+COLOURS = [
+    "blue",
+    "red",
+    "green",
+    "yellow",
+    "purple",
+    "magenta",
+    "black",
+    "white",
+    "orange",
+    "cyan",
+    "brown",
+    "silver",
+    "gold",
+    "aqua",
+    "aquamarine",
 ]
 
 def handle_response(message) -> str:
@@ -35,3 +113,18 @@ def handle_response(message) -> str:
     
     if p_message == "joke":
         return random.choice(JOKES)
+    
+    if p_message == "newpassword":
+        
+        adjective = random.choice(ADJECTIVES)
+        noun = random.choice(NOUNS)
+        number = random.randrange(0, 100)
+        colour = random.choice(COLOURS)
+        special_char = random.choice(string.punctuation)
+
+        password = adjective + colour + noun + str(number) + special_char
+
+        password = "Your password is: " + password
+
+        return password
+    
