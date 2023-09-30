@@ -115,7 +115,6 @@ def handle_response(message) -> str:
         return random.choice(JOKES)
     
     if p_message == "newpassword":
-        
         adjective = random.choice(ADJECTIVES)
         noun = random.choice(NOUNS)
         number = random.randrange(0, 100)
@@ -127,4 +126,7 @@ def handle_response(message) -> str:
         password = "Your password is: " + password
 
         return password
+    
+    if p_message == "wakamasters":
+
     
