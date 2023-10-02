@@ -128,5 +128,9 @@ def handle_response(message) -> str:
         return password
     
     if p_message == "wakamasters":
-
+        return "Waka Masters Forever!"
+    
+    if p_message == "alex":
+        return "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks."
+    
     
