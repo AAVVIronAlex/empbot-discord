@@ -133,4 +133,6 @@ def handle_response(message) -> str:
     if p_message == "alex":
         return "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks."
     
+    if p_message == "random":
+        return "Mary, my brother, my age is blowing in my chest. I must be from the beginning, but you are who I am I don't know what to say about me, but I don't want to tell you anything but me There is no problem, but you are not"
     
