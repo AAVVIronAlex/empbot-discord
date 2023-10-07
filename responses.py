@@ -136,3 +136,22 @@ def handle_response(message) -> str:
     if p_message == "random":
         return "Mary, my brother, my age is blowing in my chest. I must be from the beginning, but you are who I am I don't know what to say about me, but I don't want to tell you anything but me There is no problem, but you are not"
     
+    if p_message == "general":
+        return "https://www.youtube.com/watch?v=w0m0hTrtlWM&t=28s"
+    
+    if p_message == "sati":
+        return "https://instagram.fevn1-4.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/261826967_121435980347228_7475127980642126532_n.webp.jpg?_nc_ht=instagram.fevn1-4.fna.fbcdn.net&_nc_cat=108&_nc_ohc=S5zcTTdxYdUAX_-Njsc&edm=AABBvjUBAAAA&ccb=7-4&ig_cache_key=MjcxODU2ODc0ODY5OTExNDY2Ng%3D%3D.2-ccb7-4&oh=00_AT-A1IwJlnfoqJlIMzROd7sJ21lZw4V3ROVUuq46i5cd5g&oe=62161B36&_nc_sid=83d603 \nSatie Muradyan"
+    
+    if p_message == "newpasswordultra":
+        lower = "abcdefghijklmnopqrstuvwxyz"
+        upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        numbers = "0123456789"
+        symbols = "!@#$%^&*()_+-=<>,.?/;:"
+
+        string = lower + upper + numbers + symbols
+        length = 16
+        password = "".join(random.sample(string, length))
+        password = "Your password is: " + password
+
+        return password
+    
