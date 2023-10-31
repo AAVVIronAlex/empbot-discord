@@ -114,6 +114,9 @@ def handle_response(message) -> str:
     if p_message == "joke":
         return random.choice(JOKES)
     
+    if p_message == "halloween":
+        return "Fun fact my owner's birthday is on Hallween, lol."
+    
     if p_message == "newpassword":
         adjective = random.choice(ADJECTIVES)
         noun = random.choice(NOUNS)
